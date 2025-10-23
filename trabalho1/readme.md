@@ -67,11 +67,12 @@ Siga os passos abaixo para rodar a simulação de busca no labirinto:
   6. Execute o programa:
 
       Rode o script principal utilizando o Python 3:
+     
             ```
               python3 main.py
             ```
      
-  7. Analise os Resultados:
+  8. Analise os Resultados:
 
       Terminal: A saída no terminal exibirá a comparação de desempenho (custo do caminho, número de nós expandidos e tempo de execução) de cada algoritmo de busca implementado.
      
