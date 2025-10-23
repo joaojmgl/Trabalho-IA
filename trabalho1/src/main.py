@@ -154,7 +154,7 @@ def run_all_searches(maze: Maze):
                 print(f"  > Memória Máxima: {metrics['memoria_maxima']}")
                 print(f"  > Optimalidade: {metrics['optimalidade']}")
                 print(f"  > Gerando gráfico: {name.replace(' ', '_').replace('*', 'star')}.png")
-                save_filename = f"/home/mudar123/Documentos/ia-trabalhos/trabalho1/data/{name.replace(' ', '_').replace('*', 'star').replace('(', '').replace(')', '')}_mapa.png"
+                save_filename = f"../data/{name.replace(' ', '_').replace('*', 'star').replace('(', '').replace(')', '')}_mapa.png"
                 plot_maze_search(maze, metrics, save_path=save_filename)
             else:
                 print("  > Solução não encontrada.")
@@ -206,7 +206,7 @@ if __name__ == "__main__":
     # create_sample_maze_file()
     
     try:
-        maze_instance = Maze.from_file("C:\\Users\\User\\OneDrive\\Área de Trabalho\\IA\\Trabalho-IA\\trabalho1\\data\\labirinto.txt")
+        maze_instance = Maze.from_file('../data/labirinto.txt')
     except (FileNotFoundError, ValueError) as e:
         print(f"\nERRO FATAL ao carregar o labirinto: {e}")
         print("Verifique se o arquivo labirinto.txt está na estrutura correta (S, G, #, .)")
