@@ -22,15 +22,14 @@ A seguir, a estrutura de diretórios principal para o `trabalho1`:
     |-- trabalho1/
         |
         |-- src/
-        |   |
-        |   |-- maze.py
+        |   |-- main.py
+        |   |-- maze_representation.py
         |   |-- search.py
         |   |-- heuristics.py
-        |
-        |-- data/
+        |   |-- data_structures.py
         |   |-- labirinto.txt
-        |
-        |-- tests/
+        |-- data/
+        |   |-- caminhos.png
         |
         |-- README.md
         |
