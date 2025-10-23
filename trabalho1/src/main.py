@@ -206,7 +206,7 @@ if __name__ == "__main__":
     # create_sample_maze_file()
     
     try:
-        maze_instance = Maze.from_file("/home/mudar123/Documentos/ia-trabalhos/trabalho1/data/labirinto.txt")
+        maze_instance = Maze.from_file("C:\\Users\\User\\OneDrive\\Área de Trabalho\\IA\\Trabalho-IA\\trabalho1\\data\\labirinto.txt")
     except (FileNotFoundError, ValueError) as e:
         print(f"\nERRO FATAL ao carregar o labirinto: {e}")
         print("Verifique se o arquivo labirinto.txt está na estrutura correta (S, G, #, .)")
