@@ -75,3 +75,61 @@ Siga os passos abaixo para rodar a simulação de busca no labirinto:
       Terminal: A saída no terminal exibirá a comparação de desempenho (custo do caminho, número de nós expandidos e tempo de execução) de cada algoritmo de busca implementado.
      
       Visualização: Verifique a pasta data/ para encontrar os arquivos de imagem gerados, que mostram visualmente o caminho percorrido por cada tipo de busca.
+     
+-----
+
+## 👸 Parte 2: 8 Rainhas com Hill Climbing
+
+Implementação do algoritmo Hill Climbing para o problema das 8 Rainhas, comparando quatro estratégias diferentes de otimização local.
+
+### 📁 Estrutura do Projeto (Novos Arquivos Detalhados)
+
+Os novos arquivos adicionados (`eight_queens_representation.py`, `hill_climbing.py`, `main_t2.py`) são detalhados abaixo:
+
+```
+ia-trabalhos/
+    |-- trabalho1/
+        |
+        |-- src/
+        |   |...
+        |   |-- eight_queens_representation.py # Define a classe do tabuleiro 8x8 e a função de custo (conflitos).
+        |   |-- hill_climbing.py             # Implementa o algoritmo Hill Climbing e suas variações (Lateral e Random Restart).
+        |   |-- main_t2.py                   # Script principal de execução da simulação das 8 Rainhas (100 runs por estratégia).
+        |...
+```
+
+### 📊 Estratégias de Hill Climbing Analisadas
+
+O `main_t2.py` simula 100 execuções para cada uma das quatro configurações de Hill Climbing:
+
+1.  **HC Simples** (Pure Hill Climbing)
+2.  **HC Lateral** (Com limite de 10 movimentos laterais para escapar de platôs)
+3.  **HC Random-Restart** (Reinicia ao atingir um máximo local)
+4.  **HC Random-Restart com Lateral** (Combinação mais robusta)
+
+### 🚀 Execução (Trabalho 2)
+
+Para executar a simulação completa do Hill Climbing e gerar as métricas de sucesso, média de reinícios e média de passos, use:
+
+```bash
+python src/main_t2.py
+```
+
+### 📁 Diretório de Resultados (`data/`)
+
+O diretório `data/` armazena os artefatos visuais e de análise gerados pelos scripts `main.py` e `main_t2.py`.
+
+```
+ia-trabalhos/
+    |-- trabalho1/
+        |...
+        |-- data/
+        |   |-- caminhos.png                 # Imagem gerada pelo T1 (ex: caminho DFS/A*).
+        |   |-- resultados_busca.csv        # (Sugerido) Tabela bruta de métricas do T1.
+        |   |-- resultados_hc.csv             # (Sugerido) Tabela bruta de métricas do T2 (100 runs).
+        |   |-- taxa_sucesso_8rainhas.png    # Gráfico comparativo da taxa de sucesso do Hill Climbing.
+        |
+        |-- README.md
+        |
+        `-- relatorio.pdf                     # Relatório final em formato IEEEtran.
+```
