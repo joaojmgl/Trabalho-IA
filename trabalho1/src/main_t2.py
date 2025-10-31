@@ -48,7 +48,7 @@ def plot_success_rate(results: Dict[str, Any]):
         plt.text(bar.get_x() + bar.get_width() / 2, yval + 1, f'{yval:.1f}%', ha='center', va='bottom')
 
     plt.tight_layout()
-    plt.savefig("taxa_sucesso_8rainhas.png")
+    plt.savefig("../data/taxa_sucesso_8rainhas.png")
     plt.close()  # Fecha a figura para economizar memória
     print("\nGráfico 'taxa_sucesso_8rainhas.png' salvo.")
 
