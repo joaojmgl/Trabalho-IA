@@ -92,9 +92,9 @@ ia-trabalhos/
         |
         |-- src/
         |   |...
-        |   |-- eight_queens_representation.py # Define a classe do tabuleiro 8x8 e a função de custo (conflitos).
-        |   |-- hill_climbing.py             # Implementa o algoritmo Hill Climbing e suas variações (Lateral e Random Restart).
-        |   |-- main_t2.py                   # Script principal de execução da simulação das 8 Rainhas (100 runs por estratégia).
+        |   |-- eight_queens_representation.py 
+        |   |-- hill_climbing.py            
+        |   |-- main_t2.py                   
         |...
 ```
 
@@ -124,12 +124,10 @@ ia-trabalhos/
     |-- trabalho1/
         |...
         |-- data/
-        |   |-- caminhos.png                 # Imagem gerada pelo T1 (ex: caminho DFS/A*).
-        |   |-- resultados_busca.csv        # (Sugerido) Tabela bruta de métricas do T1.
-        |   |-- resultados_hc.csv             # (Sugerido) Tabela bruta de métricas do T2 (100 runs).
-        |   |-- taxa_sucesso_8rainhas.png    # Gráfico comparativo da taxa de sucesso do Hill Climbing.
+        |   |-- caminhos.png                      
+        |   |-- taxa_sucesso_8rainhas.png   
         |
         |-- README.md
         |
-        `-- relatorio.pdf                     # Relatório final em formato IEEEtran.
+        `-- relatorio.pdf                    
 ```
